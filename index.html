@@ -13,6 +13,8 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -73,8 +75,8 @@
     }    
     
     .btn-1 {
-        width: 100px;
-        height: 50px;
+        width: 48%;
+        height: 10%;
         border: none;
         color: white;
         background-color: #0d5ccc;
@@ -133,18 +135,14 @@
     }
     
     .footer {
-      position:absolute;
+      position:fixed;
       bottom: 0;
       right: 0;
       left :0;
       text-align: center;
-      padding : 1rem;
       background : #292268;
       color: rgb(255, 255, 255);
       font-size : 13px
-    }
-    body {
-    margin: 0px;
     }
     #menu {
     width: 200px;
@@ -152,10 +150,6 @@
     position: fixed;
     height: 100%;
     overflow: auto;
-    }
-    #content {
-    margin-left: 200px;
-    padding: 1px 20px;
     }
     ul {
     padding: 0;
@@ -187,7 +181,7 @@
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="bg-black">
-      <div class="container d-flex align-items-center justify-content-between">
+      <div class="container-flex align-items-center">
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto renkdegis" style="font-size: 25px;" href="index.html">Öneriler - Ana Sayfa</a></li>
@@ -200,7 +194,7 @@
               &subject=Gönüllü Okuyucu İstek &body=Lütfen belirtilenleri doldurunuz:
               İsim :
               Soyisim :  
-              Yaşadığınız yer : ">Gönüllü Okuyucu Ol!</a></li>
+              Yaşadığınız il : ">Gönüllü Okuyucu Ol!</a></li>
           </ul>
           <i class="bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -208,37 +202,41 @@
       </div>
     </header><!-- End Header -->
     <div class="col-md-12">
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-      <button class="btn-1" type="button">#Örnek</button>
-    </div>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+          <button class="btn-1" type="button">#Örnek</button>
+
+          var msg = new SpeechSynthesisUtterance('Hello World');
+          window.speechSynthesis.speak(msg);
+        </div>
+    
 
 
 
@@ -248,22 +246,21 @@
     
     <!-- ======= Footer ======= -->
     <div class="container-fluid">
-      <div class="row footer" style="height: 20px;">
-        <div class="footer" style="height: min-content;">
+      <div class="row footer" style="height: 4%;">
+        <div class="footer" >
           <div class="copyright-box">
             <div class="credits">
                 Meryem Mehmet Kayhan Ortaokulu için dizayn edilmiştir.
               </div>
             <div class="credits ">
-                Meryem Mehmet Kayhan Ortaokulu Öğrencisi M. Geylani Hocaoğlu tarafından dizayn edilmiştir.
+                hocao
             </div>
           </div>
         </div>
       </div>
     </div><!-- End  Footer -->
 
-    <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
   
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -275,6 +272,12 @@
   
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      const yonlendir = (url) => {
+        document.location.href = url;
+      }
+
+    </script>
   
 </body>
     
