@@ -318,7 +318,42 @@ button {
       onload = function() {
     if ('speechSynthesis' in window) with(speechSynthesis) {
 
+// select voices////
+var synth = window.speechSynthesis;
 
+var voiceSelect = document.querySelector('#voices');
+
+var voices = [];
+
+function populateVoiceList() {
+  voices = synth.getVoices().sort(function (a, b) {
+      const aname = a.name.toUpperCase(), bname = b.name.toUpperCase();
+      if ( aname < bname ) return -1;
+      else if ( aname == bname ) return 0;
+      else return +1;
+  });
+  var selectedIndex = voiceSelect.selectedIndex < 0 ? 0 : voiceSelect.selectedIndex;
+  voiceSelect.innerHTML = '';
+  for(i = 0; i < voices.length ; i++) {
+    var option = document.createElement('option');
+    option.textContent = ' (' + voices[i].lang  + ')' + voices[i].name;
+
+    if(voices[i].default) {
+      option.textContent += ' -- VARSAYILAN';
+    }
+
+    option.setAttribute('data-lang', voices[i].lang);
+    option.setAttribute('data-name', voices[i].name);
+    voiceSelect.appendChild(option);
+  }
+  voiceSelect.selectedIndex = selectedIndex;
+}
+
+populateVoiceList();
+if (speechSynthesis.onvoiceschanged !== undefined) {
+  speechSynthesis.onvoiceschanged = populateVoiceList;
+}
+//end select voices
 
         var playEle = document.querySelector('#play');
         var pauseEle = document.querySelector('#pause');
@@ -336,7 +371,7 @@ button {
                 //utterance.voice = getVoices()[0];
 
                 //add voice//
-                var selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
+                var selectedOption = voiceSelect.selectedOptions[0].getAttribute(4);
                     for(i = 0; i < voices.length ; i++) {
                       //if(voices[i].name === 'Google UK English Female') {
                       if(voices[i].name === selectedOption) {
