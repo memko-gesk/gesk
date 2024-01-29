@@ -237,14 +237,6 @@ button {
       </div>
     </header><!-- End Header -->
     <div style="display: flex; align-items: center;">
-      <div class="col- btn-1">
-        <div class=buttons>
-          <button id=play></button> &nbsp;
-          <button id=pause></button> &nbsp;
-          <button id=stop></button>
-          <noscript id="description">sonunda</noscript>
-        </div>
-      </div>
       <div class="btn-1">
         <div class=buttons>
           <button id=play></button> &nbsp;
@@ -252,8 +244,7 @@ button {
           <button id=stop></button>
           <noscript id="description">sonunda</noscript>
         </div>
-      </div>                                                                                                                                                                                                   
-      
+      </div>
     </div>
     
           
@@ -311,6 +302,8 @@ button {
     <script src="assets/js/main.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Don't Open This -->
     <script>
       onload = function() {
     if ('speechSynthesis' in window) with(speechSynthesis) {
@@ -426,6 +419,5 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
       }
 
     </script>
-  
 </body>
 </html>
